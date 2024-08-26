@@ -1,5 +1,6 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/131127
 
+// 권장시간 60분 / 풀이 시간 55분
 function solution(want, number, discount) {
   let answer = 0;
   const wantMap = {};
