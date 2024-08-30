@@ -1,4 +1,4 @@
-// https://school.programmers.co.kr/learn/courses/30/lessons/12981
+//https://school.programmers.co.kr/learn/courses/30/lessons/12981
 
 // 권장시간 40분 / 풀이시간 58분
 function solution(n, words) {
