@@ -13,7 +13,7 @@ function find(parent, i) {
 function union(parent, rank, x, y) {
   const xroot = find(parent, x);
   const yroot = find(parent, y);
-  if (rank[xroot] < rand[yroot]) {
+  if (rank[xroot] < rank[yroot]) {
     parent[xroot] = yroot;
   } else if (rand[xroot] > rank[yroot]) {
     parent[yroot] = xroot;
@@ -43,10 +43,9 @@ function solution(n, costs) {
 
     if (x !== y) {
       union(parent, rank, x, y);
+      minCost += edge[2];
+      edges += 1;
     }
-
-    minCost += edge[2];
-    edges += 1;
   }
 
   return minCost;
